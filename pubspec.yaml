@@ -1,0 +1,65 @@
+name: my_resume_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  build_runner: ^2.4.9
+  flutter:
+    sdk: flutter
+  flutter_gen: ^5.4.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_riverpod: ^2.5.1
+  flutter_svg: ^2.0.10+1
+  font_awesome_flutter: ^10.7.0
+  gap: ^3.0.1
+  morphable_shape: ^1.6.6
+  rename: ^3.0.2
+  responsive_sizer: ^3.3.1
+  riverpod: ^2.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/svg/
+    - assets/fonts/
+
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-VariableFont_wght.ttf
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/DMSans-VariableFont_opsz_wght.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icons8-resume-96.png"
+  web:
+    generate: true
+    image_path: "assets/icons8-resume-96.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons8-resume-96.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons8-resume-96.png"
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
